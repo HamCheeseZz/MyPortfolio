@@ -11,7 +11,7 @@ h1{
     border-radius: 60px 40px;
     background-color: greenyellow;
     padding: 50px;
-    font-size: 50px;
+    font-size: 5vw;
    
 }
 h3{
@@ -61,7 +61,8 @@ a:hover {
 .grid-container {
     
     display: grid;
-    grid-template: 200px / auto auto auto auto auto auto auto;
+    float:center;
+    grid-template: 50vx / auto auto auto auto auto auto auto;
     grid-gap: 20px;
     background-color: #2196F3;
     padding: 20px;
@@ -69,6 +70,7 @@ a:hover {
   
   .grid-container > div {
     
+    float: center;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
@@ -76,19 +78,58 @@ a:hover {
     
   }
   .grid-container2 {
-    
+    float: center;
     display: grid;
-    grid-template: 200px / auto auto auto;
+    grid-template: 10vx / auto auto auto;
     grid-gap: 20px;
     background-color: #2196F3;
     padding: 20px;
   }
   
   .grid-container2 > div {
-    
+    float: center;
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
     
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .menu {
+    float:left;
+    width:20%;
+    text-align:center;
+  }
+  .menu a {
+    background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    display:block;
+    width:100%;
+    color:black;
+  }
+  .main {
+    float:left;
+    width:60%;
+    padding:0 20px;
+  }
+  .right {
+    background-color:#e5e5e5;
+    float:left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+  }
+  
+  @media only screen and (max-width:968px) {
+    
+    .menu, .main, .right {
+      width:100%;
+    }
+  }
+  img{
+      max-width: 100%;
   }
